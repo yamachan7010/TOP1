@@ -1,0 +1,29 @@
+/*!
+global > color
+-------------------------
+*/
+
+
+:root {
+    // bg
+    --bg-gray-light: #f7f7f7;
+    --bg-gray: #f2f2f2;
+    --bg-gray-dark: #e6e6e6;
+    --bg-primary: #06ffe6; //ブランドカラー
+    --bg-primary-dark: #00d2d2;
+    
+    // font
+    --font-color-black: #3c3c3c;
+    --font-color-white: #ffffff;
+    --font-color-gray: #8c8c8c;
+    --font-primary: #06ffe6; //ブランドカラー
+
+    // border
+    --border-gray: #f2f2f2;
+    --border-gray-dark: #e6e6e6;
+    --border-primary-light: #06ffe6; //ブランドカラー
+    --border-primary: #06f9d2; //ブランドカラー
+    --border-primary-dark: #9eceff;
+    // shadow
+    --shadow-black: rgba(60,60,60,0.5);
+}

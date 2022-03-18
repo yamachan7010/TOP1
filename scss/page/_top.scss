@@ -1,0 +1,191 @@
+@use "../global/index" as g;
+
+/*!
+page  > top
+------------------------------
+*/
+
+/*--------------------------
+----------about-------------
+----------------------------
+*/
+
+.bl_aboutImg {
+    background: url(../../image/top/yama.png) center center /cover;
+    width: 100%;
+    height: 270px;
+    margin: 24px auto;
+}
+
+.bl_aboutContainer {
+    width: 100%;
+    padding: 24px;
+    background-color: var(--bg-gray);
+    border: 1px solid var(--border-gray-dark);
+    margin: 0 auto 40px;
+}
+
+.bl_about_ttl {
+    font-size: 20px;
+    text-align: center;
+}
+
+.bl_aboutContents {
+    margin-top: 16px;
+}
+
+.bl_aboutItem {
+    padding-top: 5px;
+    &:first-child {
+        padding-top: 0;
+    }
+}
+
+/*--------------------
+--------skill---------
+----------------------*/
+
+.bl_skillContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.bl_skillContents {
+    width: 25%;
+    height: 100px;
+    margin: 0 10px;
+    margin-bottom: 24px;
+    background-color: var(--bg-gray-light);
+    border: 1px solid var(--border-gray-dark);
+    box-shadow: 0 4px 10px var(--shadow-black);
+    &:nth-child(n + 3) {
+        margin-bottom: 0;
+    }
+}
+
+.bl_skillLogo {
+    font-size: 50px;
+    margin: 5px 0;
+    text-align: center;
+    &Img {
+        margin: 23px 0;
+    }
+}
+
+.bl_skillName {
+    text-align: center;
+}
+
+/*-----------------------
+----------work-----------
+-------------------------*/
+.bl_workContainer {
+    width: 100%;
+    margin: 24px 0 40px;
+    background-color: var(--bg-gray);
+}
+
+.bl_workImg {
+    background: url(../../image/top/work.jpg) center center/cover;
+    width: 100%;
+    height: 177px;
+    margin: 5px 0;
+}
+.bl_workDate {
+    padding-top : 5px;
+} 
+.bl_workName {
+    padding: 5px 0;
+}
+
+/*-----------------------------
+-----------service-------------
+-----------------------------*/
+.bl_serviceContainer {
+    margin: 24px 0 0px;
+}
+
+.bl_serviceContents {
+    padding: 10px 0;
+    margin-bottom: 24px;
+    background-color: var(--bg-gray);
+    border: 1px solid var(--border-gray-dark);
+}
+
+.bl_service_ttl {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+.el_blueLine{
+    background:rgba(0, 0, 0, 0) linear-gradient(transparent 60%, var(--border-primary-dark) 0%) repeat scroll 0 0;
+}
+
+.bl_serviceExplanation {
+    padding: 20px 20px 10px;
+}
+
+.bl_localAnnouncement {
+    margin-bottom: 40px;
+}
+
+.bl_localAnnouncementNext {
+    display: flex;
+    width: 90%;
+    margin: 16px auto 0;
+
+}
+
+.bl_localAnnouncement_ttl {
+    font-size: 16px;
+    color: var(--font-color-gray);
+}
+
+.el_NextBtn {
+    width: 30px;
+    height: 30px;
+}
+
+.bl_NextBtn_txt {
+    display: grid;
+    place-items: center;
+    padding-left: 10px;
+}
+
+/*-----------------------
+----------cta-----------
+-----------------------*/
+
+.bl_cta {
+    padding: 24px 8px;
+    background-color: var(--bg-gray);
+    border: 1px solid var(--bg-gray-dark);
+    text-align: center;
+}
+
+.bl_cta_ttl {
+    font-size: 20px;
+    padding-bottom: 24px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 3px solid var(--border-gray-dark);
+}
+
+.bl_cta_txt {
+    line-height: 1.7;
+    padding: 24px 0 16px;
+}
+
+.el_ctaBtn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    
+    padding: 15px 50px;
+    background-color: var(--bg-gray-dark);
+    box-shadow: 0 4px 10px var(--shadow-black);
+}

@@ -1,0 +1,21 @@
+@use "../global/index"as g;
+
+/*
+foundation > bace
+------------------------------
+*/
+
+html {
+    background: var(--bg-gray);
+}
+body {
+    font-size: 14px;
+    margin: 0 auto;
+    font-family: var(--font-family-base);
+    color: var(--font-color-black);
+    letter-spacing: 0.04em;
+
+    @include g.mq() {
+        font-size: 16px;
+    }
+}

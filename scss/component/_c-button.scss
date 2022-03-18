@@ -1,0 +1,19 @@
+// 共通ボタン
+
+@use "../global/index"as g;
+
+.c-button {
+    color: var(--bg-primary);
+    border: 2px solid var(--border-primary);
+    padding: 12px 32px;
+    font-weight: bold;
+    line-height: 1; // 変更
+    border-radius: 27px;
+    display: inline-block;
+    background: var(--bg-white); //追記
+
+
+    @include g.mq(md) {
+        padding: 12px 40px;
+    }
+}

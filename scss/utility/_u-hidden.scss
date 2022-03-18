@@ -1,0 +1,33 @@
+@use "../global/index" as g;
+
+/*!
+utility > u-hidden
+------------------------------
+*/
+.u-sp-none {
+    display: none !important;
+
+    @include g.mq(md) {
+        display: block !important;
+    }
+}
+
+.u-pc-none {
+    display: block !important;
+
+    @include g.mq(md) {
+        display: none !important;
+    }
+}
+
+.visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    border: 0;
+}

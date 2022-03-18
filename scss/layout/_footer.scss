@@ -1,0 +1,62 @@
+@use "../global/index"as g;
+
+
+/*!
+layout > footer
+--------------------------
+*/
+
+.ly_footer {
+    
+    padding: 10px 0;
+    background-color: var(--bg-gray-dark);
+
+    &_inner {
+        max-width: var(--width-content);
+        margin: 0 auto;
+    }
+    &Top {
+        width: 92%;
+        height: 50px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+.ly_footerLogo {
+    font-size: 20px;
+    line-height: 50px;
+
+}
+.el_footerTwitter {
+    position: absolute;
+    top: 8px;
+    right: 66px;
+}
+.el_footerBackToTop {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bg-gray-light);
+    &::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 0;
+        border-top: solid 2px #333;
+        border-right: solid 2px #333;
+        position: absolute;
+        top: 52%;
+        left: 36%;
+        margin-top: -4px;
+        transform: rotate(-45deg);
+    }
+}
+.hp_btGray {
+    border-top: 2px solid var(--border-gray) !important;
+}
+.el_footerCopyright {
+    // font-size: 12px;
+    text-align: center;
+}

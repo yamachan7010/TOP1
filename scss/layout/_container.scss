@@ -1,0 +1,26 @@
+/****************************************:
+
+container
+
+*****************************************:*/
+@use "../global/index"as g;
+
+.ly_container {
+    margin: -72px auto 32px;
+    background-color: var(--bg-gray-light);
+    width: 92%;
+    max-width: var(--width-content); 
+    position: relative; // 追記
+    padding: 32px 12px 12px;
+    box-shadow: 0 5px 45px var(--shadow-black);
+    // 追記
+    @include g.mq() {
+        padding: 56px 40px;
+
+    }
+
+    @include g.mq(lg) {
+        margin: -88px auto 32px;
+        padding: 72px 124px;
+    }
+}
