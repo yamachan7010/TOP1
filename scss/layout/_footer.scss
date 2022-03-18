@@ -7,7 +7,6 @@ layout > footer
 */
 
 .ly_footer {
-    
     padding: 10px 0;
     background-color: var(--bg-gray-dark);
 
@@ -25,12 +24,22 @@ layout > footer
 .ly_footerLogo {
     font-size: 20px;
     line-height: 50px;
-
+    @include g.mq() {
+        font-size: 25px;
+    }
+    @include g.mq(lg) {
+        font-size: 30px;
+    }
 }
 .el_footerTwitter {
     position: absolute;
     top: 8px;
     right: 66px;
+    @include g.mq {
+        width: 40px;
+        height: 40px;
+        top: 6px;
+    }
 }
 .el_footerBackToTop {
     position: absolute;
@@ -39,6 +48,11 @@ layout > footer
     width: 35px;
     height: 35px;
     background-color: var(--bg-gray-light);
+    @include g.mq() {
+        width: 40px;
+        height: 40px;
+        top: 6px;
+    }
     &::before {
         content: '';
         width: 10px;

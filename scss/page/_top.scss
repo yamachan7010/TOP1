@@ -9,12 +9,23 @@ page  > top
 ----------about-------------
 ----------------------------
 */
+.bl_aboutIntroduction {
+    @include g.mq() {
+        display: flex;
+        margin: 48px 0;
+        
+    }
+}
 
 .bl_aboutImg {
     background: url(../../image/top/yama.png) center center /cover;
     width: 100%;
     height: 270px;
     margin: 24px auto;
+    @include g.mq() {
+        margin: 10px;
+        height: auto;
+    }
 }
 
 .bl_aboutContainer {
@@ -23,21 +34,34 @@ page  > top
     background-color: var(--bg-gray);
     border: 1px solid var(--border-gray-dark);
     margin: 0 auto 40px;
+    @include g.mq() {
+        padding: 10px 16px;
+        margin: 10px;
+    }
 }
 
 .bl_about_ttl {
     font-size: 20px;
     text-align: center;
+    @include g.mq() {
+        font-size: 25px;
+    }
 }
 
 .bl_aboutContents {
     margin-top: 16px;
+    @include g.mq() {
+        margin-top: 56px;
+    }
 }
 
 .bl_aboutItem {
     padding-top: 5px;
     &:first-child {
         padding-top: 0;
+    }
+    @include g.mq {
+        padding-top: 10px;
     }
 }
 
@@ -51,6 +75,9 @@ page  > top
     flex-wrap: wrap;
     width: 100%;
     margin: 40px auto;
+    @include g.mq() {
+        margin: 56px auto;
+    }
 }
 
 .bl_skillContents {
@@ -61,22 +88,35 @@ page  > top
     background-color: var(--bg-gray-light);
     border: 1px solid var(--border-gray-dark);
     box-shadow: 0 4px 10px var(--shadow-black);
+    @include g.mq() {
+        height: 200px;
+    }
     &:nth-child(n + 3) {
         margin-bottom: 0;
     }
+    
 }
 
 .bl_skillLogo {
     font-size: 50px;
     margin: 5px 0;
     text-align: center;
+    @include g.mq() {
+        font-size: 100px;
+        margin: 10px 0;
+    }
     &Img {
         margin: 23px 0;
+        @include g.mq {
+            margin: 45px 0;
+        }
     }
+    
 }
 
 .bl_skillName {
     text-align: center;
+    font-size: 16px;
 }
 
 /*-----------------------
@@ -86,6 +126,10 @@ page  > top
     width: 100%;
     margin: 24px 0 40px;
     background-color: var(--bg-gray);
+    @include g.mq() {
+        width: 84%;
+        margin: 40px auto 56px;
+    }
 }
 
 .bl_workImg {
@@ -93,6 +137,10 @@ page  > top
     width: 100%;
     height: 177px;
     margin: 5px 0;
+    @include g.mq() {
+        margin: 0;
+        height: 392px; 
+    }
 }
 .bl_workDate {
     padding-top : 5px;
