@@ -24,7 +24,10 @@ page  > top
     margin: 24px auto;
     @include g.mq() {
         margin: 10px;
-        height: auto;
+        height: 450px;
+    }
+    @include g.mq(lg) {
+        height: 518px;
     }
 }
 
@@ -46,6 +49,9 @@ page  > top
     @include g.mq() {
         font-size: 25px;
     }
+    @include g.mq() {
+        font-size: 30px;
+    }
 }
 
 .bl_aboutContents {
@@ -62,6 +68,10 @@ page  > top
     }
     @include g.mq {
         padding-top: 10px;
+    }
+    @include g.mq(lg) {
+        font-size: 20px;
+        padding-top: 15px;
     }
 }
 
@@ -117,6 +127,9 @@ page  > top
 .bl_skillName {
     text-align: center;
     font-size: 16px;
+    @include g.mq(lg) {
+        font-size: 20px;
+    }
 }
 
 /*-----------------------
@@ -179,18 +192,32 @@ page  > top
 
 .bl_localAnnouncement {
     margin-bottom: 40px;
+    @include g.mq(lg) {
+        display: flex;
+    }
 }
 
 .bl_localAnnouncementNext {
     display: flex;
     width: 90%;
     margin: 16px auto 0;
-
+    @include g.mq(lg) {
+        padding: 15px 80px 15px 40px ;
+        width: 580px;
+        margin: 0 auto;
+    }
 }
 
 .bl_localAnnouncement_ttl {
     font-size: 16px;
     color: var(--font-color-gray);
+    @include g.mq(lg) {
+        display: grid;
+        place-items: center;
+        width: 320px;
+        padding: 15px 40px 15px 0;
+        border-right: 2px solid var(--border-gray-dark);
+    }
 }
 
 .el_NextBtn {
