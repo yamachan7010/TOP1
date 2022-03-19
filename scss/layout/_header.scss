@@ -66,7 +66,10 @@
         height: 100%;
     }
     &Logo {
-        font-size: 30px;
+        font-size: 25px;
+        @include g.mq() {
+            font-size: 30px;
+        }
     }
 }
 

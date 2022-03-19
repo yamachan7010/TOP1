@@ -178,6 +178,8 @@ global > color
   --bg-gray-dark: #e6e6e6;
   --bg-primary: #06ffe6;
   --bg-primary-dark: #00d2d2;
+  --bg-button-red: #e60012;
+  --bg-button-primary: #01d2d9;
   --font-color-black: #3c3c3c;
   --font-color-white: #ffffff;
   --font-color-gray: #8c8c8c;
@@ -421,7 +423,12 @@ utility > u-hidden
   height: 100%;
 }
 .ly_headerLogo {
-  font-size: 30px;
+  font-size: 25px;
+}
+@media screen and (min-width: 768px) {
+  .ly_headerLogo {
+    font-size: 30px;
+  }
 }
 
 .bl_navList {
@@ -556,6 +563,24 @@ container
     margin: -88px auto 32px;
     padding: 72px 124px;
   }
+}
+
+.ly_contact_container {
+  margin: 0px auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 92%;
+  max-width: var(--width-content);
+  position: relative;
+  padding: 42px 12px;
+}
+
+.ly_contactForm_container {
+  margin: 0px auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  max-width: var(--width-content);
+  position: relative;
+  padding: 42px 12px;
 }
 
 /*!
@@ -853,6 +878,81 @@ page  > top
   padding: 15px 50px;
   background-color: var(--bg-gray-dark);
   box-shadow: 0 4px 10px var(--shadow-black);
+}
+
+.ly_contact {
+  background-color: rgba(6, 225, 230, 0.1);
+  padding: 32px 0;
+}
+
+.el_any {
+  padding: 5px 8px;
+  background-color: var(--bg-button-primary);
+  color: var(--font-color-white);
+}
+
+.el_mandatory {
+  padding: 5px 8px;
+  background-color: var(--bg-button-red);
+  color: var(--font-color-white);
+}
+
+.bl_contact_txt {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.bl_contactForm {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bl_contactForm tr {
+  width: 351px;
+}
+
+.bl_contactForm th {
+  display: block;
+  width: 100%;
+  margin: 24px 0 16px;
+}
+
+.bl_contactForm td {
+  display: block;
+  width: 100%;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--border-gray-dark);
+}
+
+.el_contact {
+  background-color: var(--bg-gray);
+  border: 1px solid var(--border-gray-dark);
+}
+
+.bl_name {
+  display: flex;
+}
+
+.el_name {
+  width: 95px;
+  height: 30px;
+  background-color: var(--bg-gray);
+  border: 1px solid var(--border-gray-dark);
+}
+
+.el_contact {
+  width: 100%;
+  height: 30px;
+}
+
+.el_checkbox {
+  width: 100%;
+}
+
+.bl_textarea {
+  background-color: var(--bg-gray);
+  border: 1px solid var(--border-gray-dark);
 }
 
 /*!
