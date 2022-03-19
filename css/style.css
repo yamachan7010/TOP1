@@ -942,7 +942,7 @@ page  > top
 }
 
 .el_contact {
-  width: 100%;
+  width: 195px;
   height: 30px;
 }
 
@@ -951,6 +951,7 @@ page  > top
 }
 
 .bl_textarea {
+  width: 100%;
   background-color: var(--bg-gray);
   border: 1px solid var(--border-gray-dark);
 }
