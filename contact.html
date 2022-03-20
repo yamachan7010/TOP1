@@ -78,8 +78,8 @@
             <section>
                 <div class="ly_contact_container">
                     <div class="el_header">
-                        <h2 class="el_ttl">service</h2>
-                        <p class="el_subTtl">サービス</p>
+                        <h2 class="el_ttl">contact</h2>
+                        <p class="el_subTtl">お問い合わせ　</p>
                     </div>
                     <p class="bl_contact_txt">
                         お問い合わせフォームに必要事項を<br>入力してご送信ください。
@@ -136,15 +136,18 @@
                                             <th>ご要望
                                                 <span class="el_mandatory">必須</span><!-- /.el_mandatory -->
                                             </th>
-                                            <td class="bl_checkbox">
+                                            <td>
                                                 <div class="el_checkbox">
-                                                    <input type="checkbox" name="item1" value="1">新規制作(ウェブサイト)のお依頼
+                                                    <input type="checkbox" name="item1" value="1" id="new-site">
+                                                    <label for="new-site">新規制作(ウェブサイト)のお依頼</label> 
                                                 </div><!-- /.el_checkbox -->
                                                 <div class="el_checkbox">
-                                                    <input type="checkbox" name="item2" value="2">既存サイトの修正
+                                                    <input type="checkbox" name="item2" value="2" id="site-fix">
+                                                    <label for="site-fix">既存サイトの修正</label> 
                                                 </div><!-- /.el_checkbox -->
                                                 <div class="el_checkbox">
-                                                    <input type="checkbox" name="item3" value="3">サービスに関する質問・相談
+                                                    <input type="checkbox" name="item3" value="3" id="question-consultation">
+                                                    <label for="question-consultation">サービスに関する質問・相談</label> 
                                                 </div><!-- /.el_checkbox -->
                                                 
                                             </td>
@@ -160,8 +163,13 @@
                                     </tbody>
                                 </table><!-- /.bl_contactForm -->
                             </div><!-- / -->
+                            <div class="bl_confirmation">
+                                <input type="checkbox" name="confirmation" id="confirmation" >
+                                <label for="confirmation">送信内容を確認の上チェックしてください。</label> 
+                            </div><!-- /.bl_confirmation -->
+                            
                             <div class="el_textCenter">
-                                <button type="submit" class="button">送信する</button>
+                                <button type="submit" class="el_contactBtn">送信する</button>
                             </div>
                         </form>
                     </div>

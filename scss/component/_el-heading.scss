@@ -38,7 +38,7 @@
         @include g.mq() {
             width: 120px;
         }
-        @include g.mq() {
+        @include g.mq(lg) {
             width: 180px;
         }
     }

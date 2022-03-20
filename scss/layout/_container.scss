@@ -30,13 +30,17 @@ container
     width: 92%;
     max-width: var(--width-content); 
     position: relative; // 追記
-    padding: 42px 12px;
+    padding: 48px 12px;
 }
 .ly_contactForm_container {
-    margin: 0px auto;
-    background-color: rgba(255, 255, 255, 0.4);
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    width: 92%;
     max-width: var(--width-content); 
     position: relative; // 追記
-    padding: 42px 12px;
+    padding: 42px 12px 24px;
+    margin: 0 auto;
+    @include g.mq() {
+        max-width: 768px;
+    }
 }
+

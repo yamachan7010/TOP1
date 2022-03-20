@@ -3,17 +3,40 @@
 @use "../global/index"as g;
 
 .c-button {
-    color: var(--bg-primary);
-    border: 2px solid var(--border-primary);
+    color: var(--font-color-black);
+    border: 2px solid var(--border-gray-dark);
     padding: 12px 32px;
     font-weight: bold;
     line-height: 1; // 変更
-    border-radius: 27px;
     display: inline-block;
-    background: var(--bg-white); //追記
+    background: var(--bg-gray-dark); //追記
 
 
     @include g.mq(md) {
         padding: 12px 40px;
+    }
+}
+
+.el_ctaBtn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    
+    padding: 15px 50px;
+    background-color: var(--bg-gray-dark);
+    box-shadow: 0 4px 10px var(--shadow-black);
+}
+
+.el_contactBtn {
+    display: inline-block;
+    width: 330px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 0px;
+    color: var(--font-color-white);
+    background-color: var(--bg-primary-dark);
+    box-shadow: 0 4px 10px var(--shadow-black);
+    @media screen and (max-width: 375px) {
+        width: 100%;
     }
 }
