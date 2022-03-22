@@ -1,0 +1,69 @@
+@use "../global/index" as g;
+
+
+.bl_mv {
+    position: relative;
+    background-color: rgba(6, 255, 230, .2);
+    width: 100%;
+    height: 811px;
+    margin: 24px 0 40px;
+    &Border {
+        width: 100%;
+        padding: 150px 0;
+        clip-path: polygon(1% 0, 100% calc(0% + 40vw), 100% calc(100% - 5vw), 0 0%);
+        background-color: var(--bg-gray-dark);
+    }
+}
+.bl_mv_inner {
+    position: relative;
+    max-width: var(--width-content);
+    width: 92%;
+    height: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bl_mv-ttl {
+    position: absolute;
+    top: 10%;
+    font-weight: bold;
+    line-height: 2.0;
+    font-size: 22px;
+}
+.bl_mvSub-ttl {
+    position: absolute;
+    top: 50%;
+    line-height: 2.0;
+    font-size: 16px;
+}
+
+.bl_ttl_box {
+    display: flex;
+    width: 100%;
+    padding: 40px 0 24px;
+    border-top: 2px solid var(--border-gray-dark);
+}
+
+.bl_number {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: var(--font-color-white);
+    background-color: var(--bg-primary);
+    span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 16px;
+    }
+}
+.bl_serviceSection_ttl {
+    font-size: 22px;
+    width: 260px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.serviceSection_txt {
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
