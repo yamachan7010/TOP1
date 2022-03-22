@@ -36,11 +36,15 @@
     font-size: 16px;
 }
 
+.bl_reason_box {
+    padding: 40px 0;
+    border-top: 2px solid var(--border-gray-dark);
+}
 .bl_ttl_box {
     display: flex;
     width: 100%;
-    padding: 40px 0 24px;
-    border-top: 2px solid var(--border-gray-dark);
+    padding-bottom: 40px;
+    
 }
 
 .bl_number {
@@ -62,8 +66,15 @@
     margin-left: 10px;
     font-weight: bold;
 }
-.serviceSection_txt {
+.bl_serviceSection_subTtl {
     font-size: 16px;
-    padding-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
 }
+.bl_serviceImage {
+    margin: 24px 0;
+} 
 
+.bl_serviceSection_txt {
+    line-height: 1.8;
+}
