@@ -1086,9 +1086,16 @@ input:checked + label::after {
 .bl_mvBorder {
   width: 100%;
   padding: 150px 0;
-  -webkit-clip-path: polygon(1% 0, 100% calc(0% + 40vw), 100% calc(100% - 5vw), 0 0%);
-          clip-path: polygon(1% 0, 100% calc(0% + 40vw), 100% calc(100% - 5vw), 0 0%);
-  background-color: var(--bg-gray-dark);
+  -webkit-clip-path: polygon(0% 0, 100% calc(0% + 40vw), 100% calc(100% - 5vw), 0 0%);
+          clip-path: polygon(0% 0, 100% calc(0% + 40vw), 100% calc(100% - 5vw), 0 0%);
+  background-color: var(--bg-primary);
+}
+@media screen and (min-width: 768px) {
+  .bl_mvBorder {
+    padding: 200px 0;
+    -webkit-clip-path: polygon(0% 0, 100% calc(0% + 30vw), 100% calc(100% - 5vw), 0 0%);
+            clip-path: polygon(0% 0, 100% calc(0% + 30vw), 100% calc(100% - 5vw), 0 0%);
+  }
 }
 
 .bl_mv_inner {
@@ -1107,12 +1114,22 @@ input:checked + label::after {
   line-height: 2;
   font-size: 22px;
 }
+@media screen and (min-width: 768px) {
+  .bl_mv-ttl {
+    font-size: 24px;
+  }
+}
 
 .bl_mvSub-ttl {
   position: absolute;
   top: 50%;
   line-height: 2;
   font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .bl_mvSub-ttl {
+    font-size: 18px;
+  }
 }
 
 .bl_reason_box {

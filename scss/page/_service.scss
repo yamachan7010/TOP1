@@ -10,8 +10,11 @@
     &Border {
         width: 100%;
         padding: 150px 0;
-        clip-path: polygon(1% 0, 100% calc(0% + 40vw), 100% calc(100% - 5vw), 0 0%);
-        background-color: var(--bg-gray-dark);
+        clip-path: polygon(0% 0, 100% calc(0% + 40vw), 100% calc(100% - 5vw), 0 0%);
+        background-color: var(--bg-primary);
+        @include g.mq() {
+            padding: 200px 0;
+        }
     }
 }
 .bl_mv_inner {
@@ -28,12 +31,18 @@
     font-weight: bold;
     line-height: 2.0;
     font-size: 22px;
+    @include g.mq() {
+        font-size: 24px;
+    }
 }
 .bl_mvSub-ttl {
     position: absolute;
     top: 50%;
     line-height: 2.0;
     font-size: 16px;
+    @include g.mq() {
+        font-size: 18px;
+    }
 }
 
 .bl_reason_box {
