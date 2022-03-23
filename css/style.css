@@ -246,7 +246,7 @@ utility > u-hidden
 .u-pc-none {
   display: block !important;
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .u-pc-none {
     display: none !important;
   }
@@ -1141,24 +1141,45 @@ input:checked + label::after {
 }
 
 .bl_serviceSection_ttl {
+  max-width: 250px;
+  width: 100%;
   font-size: 20px;
-  width: 225px;
   margin-left: 10px;
   font-weight: bold;
+  display: grid;
+  place-items: center;
+}
+@media screen and (min-width: 500px) {
+  .bl_serviceSection_ttl {
+    max-width: 370px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bl_serviceSection_ttl {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }
 
 .bl_serviceSection_subTtl {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+  display: grid;
+  place-items: center;
 }
-
-.bl_serviceImage {
-  margin: 24px 0;
+@media screen and (min-width: 500px) {
+  .bl_serviceSection_subTtl {
+    text-align: left;
+  }
 }
 
 .bl_serviceSection_txt {
+  padding-top: 24px;
   line-height: 1.8;
+  display: grid;
+  place-items: center;
 }
 
 /*!

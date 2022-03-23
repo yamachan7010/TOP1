@@ -15,7 +15,7 @@ utility > u-hidden
 .u-pc-none {
     display: block !important;
 
-    @include g.mq(lg) {
+    @include g.mq() {
         display: none !important;
     }
 }
