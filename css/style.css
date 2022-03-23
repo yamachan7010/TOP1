@@ -1093,8 +1093,6 @@ input:checked + label::after {
 @media screen and (min-width: 768px) {
   .bl_mvBorder {
     padding: 200px 0;
-    -webkit-clip-path: polygon(0% 0, 100% calc(0% + 30vw), 100% calc(100% - 5vw), 0 0%);
-            clip-path: polygon(0% 0, 100% calc(0% + 30vw), 100% calc(100% - 5vw), 0 0%);
   }
 }
 

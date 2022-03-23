@@ -28,7 +28,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="slick/slick.css">
     <script src="https://kit.fontawesome.com/119cbffb7a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -173,7 +173,12 @@
                             <p class="el_subTtl">制作物</p>
                         </div>
                         <div class="bl_workContainer">
-                            <div class="bl_workImg"></div>
+                            <div class="bl_workSlick js-slick">
+                                <div class="bl_workImg"></div>
+                                <div class="bl_workImg"></div>
+                                <div class="bl_workImg"></div>
+                            </div><!-- /.js-slick -->
+                            
                             <p class="bl_workDate">〇月〇〇日</p><!-- /.bl_workDate -->
                             <p class="bl_workName">〇〇〇〇会社様</p><!-- /.bl_companyName -->
                         </div><!-- /.bl_workContainer -->
@@ -264,6 +269,7 @@
 
     <!-- jQueryの読み込み（CDN） -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="slick/slick.js"></script>
     <!-- main.jsの読み込み -->
     <script src="js/main.js"></script>
 </body>
