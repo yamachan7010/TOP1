@@ -98,6 +98,9 @@ page  > top
     background-color: var(--bg-gray-light);
     border: 1px solid var(--border-gray-dark);
     box-shadow: 0 4px 10px var(--shadow-black);
+    @include g.mq(sm) {
+        height: 120px;
+    }
     @include g.mq() {
         height: 200px;
     }
@@ -116,9 +119,9 @@ page  > top
         margin: 10px 0;
     }
     &Img {
-        margin: 23px 0;
+        margin: 23px 5px;
         @include g.mq {
-            margin: 45px 0;
+            margin: 45px 10px;
         }
     }
     
@@ -135,28 +138,33 @@ page  > top
 /*-----------------------
 ----------work-----------
 -------------------------*/
-.bl_workContainer {
-    width: 100%;
+.bl_workCarousel_wrap {
     margin: 24px 0 40px;
     background-color: var(--bg-gray);
     @include g.mq() {
-        width: 84%;
         margin: 40px auto 56px;
     }
 } 
 
+.bl_workCarousel_list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
 
 
 .bl_workImg {
     background: url(../../image/top/work.jpg) center center/cover;
     width: 100%;
-    height: 177px;
+    height: 250px;
     margin: 5px 0;
     @include g.mq() {
         margin: 0;
         height: 392px; 
     }
 }
+
 .bl_workDate {
     padding-top : 5px;
 } 

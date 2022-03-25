@@ -1,12 +1,13 @@
 @charset 'utf-8';
 
-// 各スタイル読み込み 
-@use "foundation"; //ベーススタイル用
+// 各スタイル読み込み   
+@use "foundation"; //ベーススタイル用        
 @use "utility"; //utitily用
 @use "component"; //パーツ読み込み用
 @use "layout/header"; //header用
 @use "layout/container"; //container用
 @use "page"; //サイトコンテンツスタイル用
 @use "layout/footer"; //footer用
+
 
 

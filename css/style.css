@@ -304,6 +304,68 @@ utility > u-hidden
   }
 }
 
+.el_work-btn {
+  width: 40px;
+  height: 100px;
+  position: absolute;
+  top: -60px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.el_work-btn-prev {
+  background-color: #9eceff;
+  top: calc(30% - 15px);
+  left: 0%;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .el_work-btn-prev {
+    top: calc(35% - 10px);
+  }
+}
+
+.el_work-btn-next {
+  background-color: #9eceff;
+  top: calc(30% - 15px);
+  right: 0%;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .el_work-btn-next {
+    top: calc(35% - 15px);
+  }
+}
+
+.el_work-btn::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-top: 2px double var(--border-gray-dark);
+  border-right: 2px double var(--border-gray-dark);
+  position: absolute;
+  top: 43%;
+  transition: 0.3s;
+}
+
+.el_work-btn-next::before {
+  transform: rotate(45deg);
+  left: 10px;
+}
+
+.el_work-btn-prev::before {
+  transform: rotate(-135deg);
+  right: 10px;
+}
+
+.el_work-btn:hover {
+  background-color: var(--bg-primary-dark);
+}
+
+.el_work-btn:hover::before {
+  border-color: #fff;
+}
+
 .el_header {
   width: 100%;
   height: 40px;
@@ -586,7 +648,7 @@ container
 @media screen and (min-width: 1080px) {
   .ly_container {
     margin: -88px auto 32px;
-    padding: 72px 124px;
+    padding: 72px 56px;
   }
 }
 
@@ -727,6 +789,11 @@ page  > top
   border: 1px solid var(--border-gray-dark);
   box-shadow: 0 4px 10px var(--shadow-black);
 }
+@media screen and (min-width: 500px) {
+  .bl_skillContents {
+    height: 120px;
+  }
+}
 @media screen and (min-width: 768px) {
   .bl_skillContents {
     height: 200px;
@@ -748,11 +815,11 @@ page  > top
   }
 }
 .bl_skillLogoImg {
-  margin: 23px 0;
+  margin: 23px 5px;
 }
 @media screen and (min-width: 768px) {
   .bl_skillLogoImg {
-    margin: 45px 0;
+    margin: 45px 10px;
   }
 }
 
@@ -769,22 +836,26 @@ page  > top
 /*-----------------------
 ----------work-----------
 -------------------------*/
-.bl_workContainer {
-  width: 100%;
+.bl_workCarousel_wrap {
   margin: 24px 0 40px;
   background-color: var(--bg-gray);
 }
 @media screen and (min-width: 768px) {
-  .bl_workContainer {
-    width: 84%;
+  .bl_workCarousel_wrap {
     margin: 40px auto 56px;
   }
+}
+
+.bl_workCarousel_list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .bl_workImg {
   background: url(../../image/top/work.jpg) center center/cover;
   width: 100%;
-  height: 177px;
+  height: 250px;
   margin: 5px 0;
 }
 @media screen and (min-width: 768px) {

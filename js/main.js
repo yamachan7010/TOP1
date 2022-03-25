@@ -7,12 +7,12 @@ $(function() {
         $("body").toggleClass("is-active");
     });
 
-    $(document).ready(function(){
-        $('.js-slick').slick({
-            
-            autoplay: true,
-            dots: true,
-            autoplaySpeed: 3000,
-        });
+    const carousel = $("#carousel");
+    carousel.slick({
+        autoplay: true,
+        dots: true,
+        prevArrow: '<div id="btn-prev" class="el_work-btn el_work-btn-prev"></div>',
+        nextArrow: '<div id="btn-next" class="el_work-btn el_work-btn-next"></div>',
+        
     });
 });

@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <script src="https://kit.fontawesome.com/119cbffb7a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -172,17 +173,41 @@
                             <h2 class="el_ttl">Work</h2>
                             <p class="el_subTtl">制作物</p>
                         </div>
-                        <div class="bl_workContainer">
-                            <div class="bl_workSlick js-slick">
-                                <div class="bl_workImg"></div>
-                                <div class="bl_workImg"></div>
-                                <div class="bl_workImg"></div>
-                            </div><!-- /.js-slick -->
+                        <div class="bl_workSlick js-slick">
+                            <div class="bl_workCarousel_wrap">
+                                <ul id="carousel" class="bl_workCarousel_list">
+                                    <li>
+                                        <article class="bl_workCarousel_item">
+                                            <div class="bl_workImg"></div>
+                                            <div class="bl_workContent">
+                                                <p class="bl_workDate">〇月〇〇日</p><!-- /.bl_workDate -->
+                                                <p class="bl_workName">〇〇〇〇会社様</p><!-- /.bl_companyName -->
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="bl_workCarousel_item">
+                                            <div class="bl_workImg"></div>
+                                            <div class="bl_newsContent">
+                                                <p class="bl_workDate">〇月〇〇日</p><!-- /.bl_workDate -->
+                                                <p class="bl_workName">〇〇〇〇会社様</p><!-- /.bl_companyName -->
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="bl_workCarousel_item">
+                                            <div class="bl_workImg"></div>
+                                            <div class="bl_newsContent">
+                                                <p class="bl_workDate">〇月〇〇日</p><!-- /.bl_workDate -->
+                                                <p class="bl_workName">〇〇〇〇会社様</p><!-- /.bl_companyName -->
+                                            </div>
+                                        </article>
+                                    </li>
+                                    
+                                </ul>
                             
-                            <p class="bl_workDate">〇月〇〇日</p><!-- /.bl_workDate -->
-                            <p class="bl_workName">〇〇〇〇会社様</p><!-- /.bl_companyName -->
-                        </div><!-- /.bl_workContainer -->
-                        
+                            </div><!-- /.js-slick -->
+                        </div>
                     </div>
                 </div>
             </section>
@@ -205,7 +230,7 @@
                             <div class="bl_serviceContents">
                                 <h2 class="bl_service_ttl el_blueLine">管理しやすいサイトづくり</h2>
                                 <p class="bl_serviceExplanation">
-                                    BEM設計やWordPressを用いり、発注者様にも分かりやすい設計やレスポンスの早い更新ができます。
+                                    CSS設計やWordPressを用いり、発注者様にも分かりやすい設計やレスポンスの早い更新ができます。
                                     <br>また、納品前のテストを始め、1つ1つの作業を発注者様と一緒に作っていきます。
                                 </p>
                             </div>
