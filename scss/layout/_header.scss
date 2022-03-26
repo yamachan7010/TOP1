@@ -85,6 +85,7 @@
     padding: 15px;
     font-size: 14px;
     border-bottom: var(--border-gray-dark);
+
     @include g.mq() {
         margin: 0 5px;
         padding: 19px 15px;
@@ -159,15 +160,15 @@
 }
 
 .el_hamburger.is-active {
-    .hamburgerBar:nth-child(1) {
+    .el_hamburgerBar:nth-child(1) {
         top: 20px;
         transform: rotate(45deg);
     }
-    .hamburgerBar:nth-child(2) {
+    .el_hamburgerBar:nth-child(2) {
         left: 30px;
         opacity: 0;
     }
-    .hamburgerBar:nth-child(3) {
+    .el_hamburgerBar:nth-child(3) {
         top: 20px;
         transform: rotate(-45deg);
     }
@@ -205,7 +206,7 @@ body.is-active {
         display: block;
         padding: 15px;
         font-size: 14px;
-        border-bottom: var(--border-gray-dark);
+        
     }
     
     .el_hamburger {
