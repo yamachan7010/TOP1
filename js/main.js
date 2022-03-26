@@ -7,6 +7,8 @@ $(function() {
         $("body").toggleClass("is-active");
     });
 
+    
+
     const carousel = $("#carousel");
     carousel.slick({
         autoplay: true,
