@@ -21,10 +21,15 @@
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    
     padding: 15px 50px;
     background-color: var(--bg-gray-dark);
     box-shadow: 0 4px 10px var(--shadow-black);
+    &:active {
+        box-shadow: none;
+        transition: .05s;
+        position: relative;
+        top: 3px;
+    }
 }
 
 .el_contactBtn {
@@ -36,6 +41,12 @@
     color: var(--font-color-white);
     background-color: var(--bg-primary-dark);
     box-shadow: 0 4px 10px var(--shadow-black);
+    &:active {
+        box-shadow: none;
+        transition: .3s;
+        position: relative;
+        top: 3px;
+    }
     @media screen and (max-width: 375px) {
         width: 100%;
     }
@@ -51,7 +62,7 @@
 }
 
 .el_work-btn-prev {
-    background-color: #9eceff;
+    background: rgba(1, 210, 217, .2);
     top: calc(30% - 15px);
     left: calc(0%);
     z-index: 100;
@@ -61,7 +72,7 @@
 }
 
 .el_work-btn-next {
-    background-color: #9eceff;
+    background: rgba(1, 210, 217, .2);
     top: calc(30% - 15px);
     right: calc(0%); 
     z-index: 100;
@@ -74,8 +85,8 @@
     content: "";
     width: 13px;
     height: 13px;
-    border-top: 2px double var(--border-gray-dark);
-    border-right: 2px double var(--border-gray-dark);
+    border-top: 2px solid var(--border-gray-dark);
+    border-right: 2px solid var(--border-gray-dark);
     position: absolute;
     top: 43%;
     transition: 0.3s;

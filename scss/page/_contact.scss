@@ -57,20 +57,25 @@
         padding: 24px 0px 24px;
     }
 }
+
 .el_contact {
     background-color: var(--bg-gray-light);
     border: 1px solid var(--border-contact-gray);
-}
-
-.el_contact {
     width: 100%;
     height: 30px;
+    transition: .3s;
     @media screen and (min-width: 375px) {
         max-width: 85%;
     }
     @include g.mq() {
         max-width: 100%;
     }
+
+}
+.el_contact:focus {
+    border: var(--border-primary);
+    outline: none;
+    box-shadow: 0 0 4px 2px var(--border-primary-dark);
 }
 
 .bl_name {
@@ -81,12 +86,18 @@
     height: 30px;
     background-color: var(--bg-gray-light);
     border: 1px solid var(--border-contact-gray);
+    transition: .3s;
     @media screen and (min-width: 375px) {
         max-width: 42.5%;
     }
     @include g.mq() {
         max-width: 49%;
     }
+}
+.el_name:focus {
+    border: var(--border-primary);
+    outline: none;
+    box-shadow: 0 0 4px 2px var(--border-primary-dark);
 }
 
 .el_checkbox {
@@ -98,6 +109,12 @@
     width: 100%;
     background-color: var(--bg-gray);
     border: 1px solid var(--border-contact-gray);
+}
+.bl_textarea:focus {
+    border: var(--border-primary);
+    outline: none;
+    box-shadow: 0 0 4px 2px var(--border-primary-dark);
+    transition: .3s;
 }
 
 label {

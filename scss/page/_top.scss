@@ -48,8 +48,9 @@ page  > top
     text-align: center;
     @include g.mq() {
         font-size: 25px;
+        margin-top: 24px;
     }
-    @include g.mq() {
+    @include g.mq(lg) {
         font-size: 30px;
     }
 }
@@ -57,7 +58,7 @@ page  > top
 .bl_aboutContents {
     margin-top: 16px;
     @include g.mq() {
-        margin-top: 56px;
+        margin-top: 72px;
     }
 }
 
@@ -66,7 +67,7 @@ page  > top
     &:first-child {
         padding-top: 0;
     }
-    @include g.mq {
+    @include g.mq() {
         padding-top: 10px;
     }
     @include g.mq(lg) {
@@ -96,10 +97,10 @@ page  > top
     margin: 0 10px;
     margin-bottom: 24px;
     background-color: var(--bg-gray-light);
-    border: 1px solid var(--border-gray-dark);
-    box-shadow: 0 4px 10px var(--shadow-black);
+    // border: 1px solid var(--border-gray-dark);
+    
     @include g.mq(sm) {
-        height: 120px;
+        height: 110px;
     }
     @include g.mq() {
         height: 200px;
@@ -108,6 +109,10 @@ page  > top
         margin-bottom: 0;
     }
     
+    &:hover {
+        // box-shadow: 0 4px 10px var(--shadow-black);
+        transition: .3s;
+    }
 }
 
 .bl_skillLogo {
@@ -116,12 +121,14 @@ page  > top
     text-align: center;
     @include g.mq() {
         font-size: 100px;
-        margin: 10px 0;
+        margin: 20px 0;
     }
     &Img {
+        max-height: 20px;
         margin: 23px 5px;
-        @include g.mq {
-            margin: 45px 10px;
+        @include g.mq() {
+            max-width: 200px;
+            margin: 65px auto;
         }
     }
     
@@ -129,7 +136,10 @@ page  > top
 
 .bl_skillName {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
+    @include g.mq() {
+        font-size: 16px;
+    }
     @include g.mq(lg) {
         font-size: 20px;
     }
@@ -211,6 +221,7 @@ page  > top
     display: flex;
     width: 90%;
     margin: 16px auto 0;
+    cursor: pointer;
     @include g.mq(lg) {
         padding: 15px 80px 15px 40px ;
         width: 580px;

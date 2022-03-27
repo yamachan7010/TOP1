@@ -287,6 +287,12 @@ utility > u-hidden
   background-color: var(--bg-gray-dark);
   box-shadow: 0 4px 10px var(--shadow-black);
 }
+.el_ctaBtn:active {
+  box-shadow: none;
+  transition: 0.05s;
+  position: relative;
+  top: 3px;
+}
 
 .el_contactBtn {
   display: inline-block;
@@ -297,6 +303,12 @@ utility > u-hidden
   color: var(--font-color-white);
   background-color: var(--bg-primary-dark);
   box-shadow: 0 4px 10px var(--shadow-black);
+}
+.el_contactBtn:active {
+  box-shadow: none;
+  transition: 0.3s;
+  position: relative;
+  top: 3px;
 }
 @media screen and (max-width: 375px) {
   .el_contactBtn {
@@ -314,7 +326,7 @@ utility > u-hidden
 }
 
 .el_work-btn-prev {
-  background-color: #9eceff;
+  background: rgba(1, 210, 217, 0.2);
   top: calc(30% - 15px);
   left: 0%;
   z-index: 100;
@@ -326,7 +338,7 @@ utility > u-hidden
 }
 
 .el_work-btn-next {
-  background-color: #9eceff;
+  background: rgba(1, 210, 217, 0.2);
   top: calc(30% - 15px);
   right: 0%;
   z-index: 100;
@@ -341,8 +353,8 @@ utility > u-hidden
   content: "";
   width: 13px;
   height: 13px;
-  border-top: 2px double var(--border-gray-dark);
-  border-right: 2px double var(--border-gray-dark);
+  border-top: 2px solid var(--border-gray-dark);
+  border-right: 2px solid var(--border-gray-dark);
   position: absolute;
   top: 43%;
   transition: 0.3s;
@@ -526,19 +538,25 @@ utility > u-hidden
 }
 
 .bl_navLink {
+  position: relative;
   display: block;
   padding: 15px;
-  font-size: 14px;
+  font-size: 16px;
   border-bottom: var(--border-gray-dark);
 }
 @media screen and (min-width: 768px) {
   .bl_navLink {
     margin: 0 5px;
     padding: 19px 15px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: var(--font-color-black);
     -webkit-text-stroke: 0.15px var(--border-gray-dark);
+  }
+}
+@media screen and (min-width: 768px) {
+  .bl_navLink span:nth-child(2) {
+    display: none;
   }
 }
 
@@ -547,7 +565,7 @@ utility > u-hidden
     content: "";
     display: block;
     height: 1px;
-    width: 100%;
+    width: 99%;
     background: var(--bg-primary);
     transform: scale(0, 1);
     transition: 0.3s;
@@ -646,7 +664,15 @@ body.is-active {
   .bl_navLink {
     display: block;
     padding: 15px;
-    font-size: 14px;
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: var(--bg-gray);
+  }
+  .bl_navLink span {
+    margin: 0 10px;
+  }
+  .bl_navLink span:nth-child(2) {
+    font-size: 12px;
   }
 
   .el_hamburger {
@@ -765,9 +791,10 @@ page  > top
 @media screen and (min-width: 768px) {
   .bl_about_ttl {
     font-size: 25px;
+    margin-top: 24px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .bl_about_ttl {
     font-size: 30px;
   }
@@ -778,7 +805,7 @@ page  > top
 }
 @media screen and (min-width: 768px) {
   .bl_aboutContents {
-    margin-top: 56px;
+    margin-top: 72px;
   }
 }
 
@@ -822,12 +849,10 @@ page  > top
   margin: 0 10px;
   margin-bottom: 24px;
   background-color: var(--bg-gray-light);
-  border: 1px solid var(--border-gray-dark);
-  box-shadow: 0 4px 10px var(--shadow-black);
 }
 @media screen and (min-width: 500px) {
   .bl_skillContents {
-    height: 120px;
+    height: 110px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -838,6 +863,9 @@ page  > top
 .bl_skillContents:nth-child(n+3) {
   margin-bottom: 0;
 }
+.bl_skillContents:hover {
+  transition: 0.3s;
+}
 
 .bl_skillLogo {
   font-size: 50px;
@@ -847,21 +875,28 @@ page  > top
 @media screen and (min-width: 768px) {
   .bl_skillLogo {
     font-size: 100px;
-    margin: 10px 0;
+    margin: 20px 0;
   }
 }
 .bl_skillLogoImg {
+  max-height: 20px;
   margin: 23px 5px;
 }
 @media screen and (min-width: 768px) {
   .bl_skillLogoImg {
-    margin: 45px 10px;
+    max-width: 200px;
+    margin: 65px auto;
   }
 }
 
 .bl_skillName {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .bl_skillName {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 1080px) {
   .bl_skillName {
@@ -951,6 +986,7 @@ page  > top
   display: flex;
   width: 90%;
   margin: 16px auto 0;
+  cursor: pointer;
 }
 @media screen and (min-width: 1080px) {
   .bl_localAnnouncementNext {
@@ -1075,11 +1111,9 @@ page  > top
 .el_contact {
   background-color: var(--bg-gray-light);
   border: 1px solid var(--border-contact-gray);
-}
-
-.el_contact {
   width: 100%;
   height: 30px;
+  transition: 0.3s;
 }
 @media screen and (min-width: 375px) {
   .el_contact {
@@ -1092,6 +1126,12 @@ page  > top
   }
 }
 
+.el_contact:focus {
+  border: var(--border-primary);
+  outline: none;
+  box-shadow: 0 0 4px 2px var(--border-primary-dark);
+}
+
 .bl_name {
   display: flex;
 }
@@ -1101,6 +1141,7 @@ page  > top
   height: 30px;
   background-color: var(--bg-gray-light);
   border: 1px solid var(--border-contact-gray);
+  transition: 0.3s;
 }
 @media screen and (min-width: 375px) {
   .el_name {
@@ -1113,6 +1154,12 @@ page  > top
   }
 }
 
+.el_name:focus {
+  border: var(--border-primary);
+  outline: none;
+  box-shadow: 0 0 4px 2px var(--border-primary-dark);
+}
+
 .el_checkbox {
   width: 100%;
   margin: 10px 0;
@@ -1122,6 +1169,13 @@ page  > top
   width: 100%;
   background-color: var(--bg-gray);
   border: 1px solid var(--border-contact-gray);
+}
+
+.bl_textarea:focus {
+  border: var(--border-primary);
+  outline: none;
+  box-shadow: 0 0 4px 2px var(--border-primary-dark);
+  transition: 0.3s;
 }
 
 label {
@@ -1358,6 +1412,14 @@ layout > footer
   width: 35px;
   height: 35px;
   background-color: var(--bg-gray-light);
+}
+.el_footerBackToTop:hover {
+  background-color: #9eceff;
+  transition: 0.3s;
+}
+.el_footerBackToTop:hover::before {
+  border-top: solid 2px var(--border-gray);
+  border-right: solid 2px var(--border-gray);
 }
 @media screen and (min-width: 768px) {
   .el_footerBackToTop {

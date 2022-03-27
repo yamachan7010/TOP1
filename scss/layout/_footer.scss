@@ -48,6 +48,15 @@ layout > footer
     width: 35px;
     height: 35px;
     background-color: var(--bg-gray-light);
+    &:hover {
+        background-color: #9eceff;
+        transition: .3s;
+    }
+
+    &:hover::before {
+        border-top: solid 2px var(--border-gray);
+        border-right: solid 2px var(--border-gray);
+    }
     @include g.mq() {
         width: 40px;
         height: 40px;
