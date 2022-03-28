@@ -12,9 +12,6 @@ $(function() {
         $('.js-parallax').css({
             transform:"translateY("+ value +"%)"
         });
-
-        let scroll = $(window).scrollTop();
-        $('')
     });
 
 
@@ -26,4 +23,6 @@ $(function() {
         nextArrow: '<div id="btn-next" class="el_work-btn el_work-btn-next"></div>',
     });
     
+
+
 });

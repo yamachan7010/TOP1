@@ -548,7 +548,7 @@ utility > u-hidden
   .bl_navLink {
     margin: 0 5px;
     padding: 19px 15px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: var(--font-color-black);
     -webkit-text-stroke: 0.15px var(--border-gray-dark);
@@ -1237,6 +1237,20 @@ input:checked + label::after {
   text-align: center;
 }
 
+.js-slide-top {
+  transform: translateY(-50px);
+}
+
+.js-slide {
+  opacity: 0;
+  transition: 0.6s ease-out;
+}
+
+.js-slide .is-active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 .bl_mv {
   position: relative;
   background-color: rgba(6, 255, 230, 0.2);
@@ -1294,6 +1308,9 @@ input:checked + label::after {
 .bl_reason_box {
   padding: 40px 0;
   border-top: 2px solid var(--border-gray-dark);
+}
+.bl_reason_box:nth-child(6) {
+  border-bottom: 2px solid var(--border-gray-dark);
 }
 
 .bl_ttl_box {
@@ -1356,6 +1373,10 @@ input:checked + label::after {
   line-height: 1.8;
   display: grid;
   place-items: center;
+}
+
+.bl_service_txt {
+  padding: 20px 0 0px;
 }
 
 /*!

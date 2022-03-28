@@ -1,5 +1,20 @@
 @use "../global/index" as g;
 
+.js-slide-top {
+    transform: translateY(-50px);
+}
+
+.js-slide {
+    opacity: 0;
+    transition: 0.6s ease-out;
+}
+
+.js-slide .is-active {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
 
 .bl_mv {
     position: relative;
@@ -48,6 +63,9 @@
 .bl_reason_box {
     padding: 40px 0;
     border-top: 2px solid var(--border-gray-dark);
+    &:nth-child(6) {
+        border-bottom: 2px solid var(--border-gray-dark);
+    }
 }
 .bl_ttl_box {
     display: flex;
@@ -100,4 +118,8 @@
     line-height: 1.8;
     display: grid;
     place-items: center;
+}
+
+.bl_service_txt {
+    padding: 20px 0 0px;
 }
