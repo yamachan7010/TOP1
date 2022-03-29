@@ -1,7 +1,6 @@
 @use "../global/index"as g;
 
 .bl_jumbotron {
-    background: url(../../image/header/mv.jpg) center center /cover;
     height: 911px;
 
     &_inner {
@@ -112,7 +111,7 @@
         // bottom: -5px;
         // left: 10%;
         transform: scale(0, 1);
-        transition: .3s;
+        transition: .5s;
     }
 }
 .bl_navLink:hover {

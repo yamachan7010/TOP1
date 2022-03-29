@@ -24,5 +24,19 @@ $(function() {
     });
     
 
+    $("#el_footerBackToTop").click(function() {
+        // 処理を記入していく
+        //html,bodyに0.6秒かけて画面の一番上に戻ってください
+        $("html,body").animate({
+          //ここにやってほしい処理
+          scrollTop: 0, //スクロールの位置を0にしてください
+        },
+    
+        //時間
+            1000 //100 →0.1秒
+        );
+        return false;
+    });
+    
 
 });

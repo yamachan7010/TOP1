@@ -2,82 +2,23 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover" />
-    <!-- meta -->
-    <title>〇〇〇〇</title>
-    <meta name="description" content="" />
-    <meta name="format-detection" content="telephone=no" />
-    <!--PC：１２０文字以内 スマホ：70文字以内-->
-    <!-- og@ -->
-    <meta property="og:url" content="https://〇〇.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:image" content=" https://〇〇.com/images/〇〇" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="Twitterのアカウントをいれる" />
-    <!-- 開発中 -->
-    <meta name="robots" content="noindex" />
-    <!-- 公開時 -->
-    <!-- <meta name="robots" content="INDEX,FOLLOW"> -->
-    <!-- ファビコン -->
-    <link rel="icon" type="image/x-icon" href="" />
-    <link rel="apple-touch-icon" sizes="180×180" href="" />
-    <!-- css -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <?php get_header(); ?>
+
 </head>
 
 <body>
 
     <!-- header,footer,備考 -->
     <!-- ヘッダー -->
-    <header class="ly_header">
-        <div class="ly_header_inner">
-            <!-- ここに書いてください -->
-            <a href='#' class="ly_headerLogo">yamachan</a>
-
-            <nav class="bl_nav">
-                <ul class="bl_navList">
-                    <li>
-                        <a href="#" class="bl_navLink">
-                            <span>about</span><span>自己紹介</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="bl_navLink">
-                            <span>works</span><span>制作物一覧</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="bl_navLink">
-                            <span>service</span><span>サービス</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="bl_navLink">
-                            <span>contact</span><span>お問い合わせ</span>
-                        </a>
-                    </li>
-
-                </ul><!-- /.bl_navList -->
-            </nav>
-
-            <div class="el_hamburger" id="hamburger">
-                <span class="el_hamburgerBar"></span>
-                <span class="el_hamburgerBar"></span>
-                <span class="el_hamburgerBar"></span>
-            </div>
-        </div><!-- /.ly_header_inner -->
-    </header>
+    
+    <?php get_template_part('includes/header'); ?>
 
         <!-- メインコンテンツ -->
         <main>
             <section>
                 <div class="ly_contact_container">
-                    <div class="el_header">
+                    <div class="el_header" id="contact">
                         <h2 class="el_ttl">contact</h2>
                         <p class="el_subTtl">お問い合わせ　</p>
                     </div>
@@ -179,34 +120,10 @@
             
             
     <!-- フッター -->
-    <footer>
-        <!-- 外側の要素-->
-        <div class="ly_footer">
-            <!-- 内側の要素 -->
-            <div class="ly_footer_inner">
-                <div class="ly_footerTop">
-                    <a href="" class="ly_footerLogo">yamachan</a><!-- /.ly_footerLogo -->
-                    <a href="" class="el_footerTwitter">
-                        <img src="image/common/icon-sns-twitter.svg" alt="">
-                    </a><!-- /.el_footerTwitter -->
-                    <a href="" class="el_footerBackToTop"></a><!-- /.el_footerBackToTop -->
-                </div><!-- /.ly_footerTop -->
-                <!-- レイアウトの中にナビゲーション -->
-            </div><!-- /.ly_footer_inner -->
-        </div><!-- /.ly_footer -->
-        <!-- 外側に当たる要素 ボーダーの追加 -->
-        <div class="ly_footer hp_btGray">
-            <!-- 内側の要素 -->
-            <div class="ly_footer_inner">
-                <p class="el_footerCopyright"><small >&copy;2022 yamachan</small></p>
-            </div><!-- /.ly_footer_inner -->
-        </div><!-- /.ly_footer -->
-    </footer>
+    <?php get_template_part('includes/footer'); ?>
 
-    <!-- jQueryの読み込み（CDN） -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- main.jsの読み込み -->
-    <script src="js/main.js"></script>
+    <?php get_footer(); ?>
+    
 </body>
 
 </html>

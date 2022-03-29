@@ -2,82 +2,19 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover" />
-    <!-- meta -->
-    <title>〇〇〇〇</title>
-    <meta name="description" content="" />
-    <meta name="format-detection" content="telephone=no" />
-    <!--PC：１２０文字以内 スマホ：70文字以内-->
-    <!-- og@ -->
-    <meta property="og:url" content="https://〇〇.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:image" content=" https://〇〇.com/images/〇〇" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="Twitterのアカウントをいれる" />
-    <!-- 開発中 -->
-    <meta name="robots" content="noindex" />
-    <!-- 公開時 -->
-    <!-- <meta name="robots" content="INDEX,FOLLOW"> -->
-    <!-- ファビコン -->
-    <link rel="icon" type="image/x-icon" href="" />
-    <link rel="apple-touch-icon" sizes="180×180" href="" />
-    <!-- css -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <script src="https://kit.fontawesome.com/119cbffb7a.js" crossorigin="anonymous"></script>
+
+    <?php get_header(); ?>
+
 </head>
 
 <body>
     <h1 class="visuallyhidden">yamachan</h1><!-- /.visuallyhidden -->
     <!-- mv -->
-    <div class="bl_jumbotron">
+    <div class="bl_jumbotron" style="background: url(<?php echo get_template_directory_uri(); ?>/image/header/mv.jpg) center center /cover;">
 
-    <!-- header,footer,備考 -->
     <!-- ヘッダー -->
-        <header class="ly_header">
-            <div class="ly_header_inner">
-                <!-- ここに書いてください -->
-                <a href='#' class="ly_headerLogo">yamachan</a>
+        <?php get_template_part('includes/header'); ?>
 
-                <nav class="bl_nav">
-                    <ul class="bl_navList">
-                        <li>
-                            <a href="#" class="bl_navLink">
-                                <span>about</span><span>自己紹介</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="bl_navLink">
-                                <span>works</span><span>制作物一覧</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="bl_navLink">
-                                <span>service</span><span>サービス</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="bl_navLink">
-                                <span>contact</span><span>お問い合わせ</span>
-                            </a>
-                        </li>
-
-                    </ul><!-- /.bl_navList -->
-                </nav>
-
-                <div class="el_hamburger" id="hamburger">
-                    <span class="el_hamburgerBar"></span>
-                    <span class="el_hamburgerBar"></span>
-                    <span class="el_hamburgerBar"></span>
-                </div>
-            </div><!-- /.ly_header_inner -->
-        </header>
         <div class="bl_jumbotron_inner js-parallax">
             <h2 class="bl_jumbotronMain-ttl ">
                 Let's see a bright future together.
@@ -99,7 +36,7 @@
                             <p class="el_subTtl">自己紹介</p>
                         </div>
                         <div class="bl_aboutIntroduction">
-                            <div class="bl_aboutImg"></div>
+                            <div class="bl_aboutImg" style="background: url(<?php echo get_template_directory_uri(); ?>/image/top/yama.png) center center /cover;"></div>
 
                             <div class="bl_aboutContainer">
                                 <h2 class="bl_about_ttl">my-profile</h2> 
@@ -150,7 +87,7 @@
                             </div>
                             <div class="bl_skillContents">
                                 <div class="bl_skillLogoImg">
-                                    <img src="image/top/jQuery-Logo.png" alt="jQuery" width="3.9" height="1">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/image/top/jQuery-Logo.png" alt="jQuery" width="3.9" height="1">
                                 </div>
                                 <p class="bl_skillName">jQuery</p>
                             </div>
@@ -178,16 +115,19 @@
                                 <ul id="carousel" class="bl_workCarousel_list">
                                     <li>
                                         <article class="bl_workCarousel_item">
-                                            <div class="bl_workImg"></div>
-                                            <div class="bl_workContent">
-                                                <p class="bl_workDate">〇月〇〇日</p><!-- /.bl_workDate -->
-                                                <p class="bl_workName">〇〇〇〇会社様</p><!-- /.bl_companyName -->
-                                            </div>
+                                            <a href="<?php echo home_url(); ?>" class="bl_worklink">
+                                                <div class="bl_workImg" style="background: url(<?php echo get_template_directory_uri(); ?>/image/top/portfolio-site.jpg) center center/cover;"></div>
+                                                <div class="bl_workContent">
+                                                    <p class="bl_workDate">2022年3月30日</p><!-- /.bl_workDate -->
+                                                    <p class="bl_workName">ポートフォリオサイトの作成</p><!-- /.bl_companyName -->
+                                                    <p class="bl_workPeriod">制作期間　1か月</p><!-- /.bl_companyName -->
+                                                </div>
+                                            </a><!-- /.bl_worklink -->
                                         </article>
                                     </li>
                                     <li>
                                         <article class="bl_workCarousel_item">
-                                            <div class="bl_workImg"></div>
+                                            <div class="bl_workImg" style="background: url(<?php echo get_template_directory_uri(); ?>/image/top/work.jpg) center center/cover;"></div>
                                             <div class="bl_newsContent">
                                                 <p class="bl_workDate">〇月〇〇日</p><!-- /.bl_workDate -->
                                                 <p class="bl_workName">〇〇〇〇会社様</p><!-- /.bl_companyName -->
@@ -196,7 +136,7 @@
                                     </li>
                                     <li>
                                         <article class="bl_workCarousel_item">
-                                            <div class="bl_workImg"></div>
+                                            <div class="bl_workImg" style="background: url(<?php echo get_template_directory_uri(); ?>/image/top/work.jpg) center center/cover;"></div>
                                             <div class="bl_newsContent">
                                                 <p class="bl_workDate">〇月〇〇日</p><!-- /.bl_workDate -->
                                                 <p class="bl_workName">〇〇〇〇会社様</p><!-- /.bl_companyName -->
@@ -244,7 +184,7 @@
                         <div class="bl_localAnnouncement">
                             <h2 class="bl_localAnnouncement_ttl">ご覧になっている発注者様へ</h2><!-- /.bl_localAnnouncementTtl -->
                             <a class="bl_localAnnouncementNext">
-                                <img src="image/top/service-next-button.svg"  class="el_NextBtn" alt="サービスの詳しい詳細を見る" width="30" height="30">
+                                <img src="<?php echo get_template_directory_uri(); ?>/image/top/service-next-button.svg"  class="el_NextBtn" alt="サービスの詳しい詳細を見る" width="30" height="30">
                                 <p class="bl_NextBtn_txt">
                                     サービスの詳しい詳細はこちらから
                                 </p><!-- /.bl_NextBtnTxt -->
@@ -268,35 +208,9 @@
     </div>
     <!-- /.container -->
     <!-- フッター -->
-    <footer>
-        <!-- 外側の要素-->
-        <div class="ly_footer">
-            <!-- 内側の要素 -->
-            <div class="ly_footer_inner">
-                <div class="ly_footerTop">
-                    <a href="" class="ly_footerLogo">yamachan</a><!-- /.ly_footerLogo -->
-                    <a href="" class="el_footerTwitter">
-                        <img src="image/common/icon-sns-twitter.svg" alt="">
-                    </a><!-- /.el_footerTwitter -->
-                    <a href="" class="el_footerBackToTop"></a><!-- /.el_footerBackToTop -->
-                </div><!-- /.ly_footerTop -->
-                <!-- レイアウトの中にナビゲーション -->
-            </div><!-- /.ly_footer_inner -->
-        </div><!-- /.ly_footer -->
-        <!-- 外側に当たる要素 ボーダーの追加 -->
-        <div class="ly_footer hp_btGray">
-            <!-- 内側の要素 -->
-            <div class="ly_footer_inner">
-                <p class="el_footerCopyright"><small >&copy;2022 yamachan</small></p>
-            </div><!-- /.ly_footer_inner -->
-        </div><!-- /.ly_footer -->
-    </footer>
+    <?php get_template_part('includes/footer'); ?>
 
-    <!-- jQueryの読み込み（CDN） -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="slick/slick.js"></script>
-    <!-- main.jsの読み込み -->
-    <script src="js/main.js"></script>
+    <?php get_footer(); ?>
 </body>
 
 </html>
