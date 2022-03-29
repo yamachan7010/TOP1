@@ -27,7 +27,7 @@
     <div class="ly_container">
         <!-- メインコンテンツ -->
         <main>
-            <section>
+            <section id="about">
                 <div class="bl_about">
                     <div class="bl_about_inner">
 
@@ -103,7 +103,7 @@
                 </div>
             </section>
     
-            <section>
+            <section id="works">
                 <div class="bl_work">
                     <div class="bl_work-inner">
                         <div class="el_header">
@@ -152,7 +152,7 @@
                 </div>
             </section>
     
-            <section>
+            <section id="service">
                 <div class="bl_service">
                     <div class="bl_service-inner">
                         <div class="el_header">
@@ -183,7 +183,7 @@
                         </div>
                         <div class="bl_localAnnouncement">
                             <h2 class="bl_localAnnouncement_ttl">ご覧になっている発注者様へ</h2><!-- /.bl_localAnnouncementTtl -->
-                            <a class="bl_localAnnouncementNext">
+                            <a href="<?php echo home_url(); ?>/service" class="bl_localAnnouncementNext">
                                 <img src="<?php echo get_template_directory_uri(); ?>/image/top/service-next-button.svg"  class="el_NextBtn" alt="サービスの詳しい詳細を見る" width="30" height="30">
                                 <p class="bl_NextBtn_txt">
                                     サービスの詳しい詳細はこちらから
@@ -201,7 +201,7 @@
                         サービスのことで気になることがありましたら、
                         <br class="u-sp-none u-pc-none">お気軽にお問い合わせください。
                     </p><!-- /.bl_cta_txt -->
-                    <a href="#" class="el_ctaBtn">問い合わせする</a>
+                    <a href="<?php echo home_url(); ?>/contact" class="el_ctaBtn">問い合わせする</a>
                 </div><!-- /.bl_cta -->
             </section>
         </main>

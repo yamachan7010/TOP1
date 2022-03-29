@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: service(自分で分かりやすい名前をつける) 
+Template Name: service
 */
 ?>
 

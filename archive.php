@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: contact
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 

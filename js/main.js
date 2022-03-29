@@ -12,6 +12,15 @@ $(function() {
         $('.js-parallax').css({
             transform:"translateY("+ value +"%)"
         });
+    
+    
+        var headerH = $('#header').outerHeight(true);
+        var scroll = $(window).scrollTop();
+        if (scroll >= headerH){//headerの高さ以上になったら
+            $('#header').addClass('fixed');//fixedというクラス名を付与
+        }else{//それ以外は
+            $('#header').removeClass('fixed');//fixedというクラス名を除去
+        }
     });
 
 
@@ -24,6 +33,8 @@ $(function() {
     });
     
 
+    
+    
     $("#el_footerBackToTop").click(function() {
         // 処理を記入していく
         //html,bodyに0.6秒かけて画面の一番上に戻ってください
