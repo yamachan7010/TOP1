@@ -1,7 +1,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover" />
 <!-- meta -->
-<title>〇〇〇〇</title>
+<title>yamachan-portfolio</title>
 <meta name="description" content="" />
 <meta name="format-detection" content="telephone=no" />
 <!--PC：１２０文字以内 スマホ：70文字以内-->
