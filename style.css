@@ -3,3 +3,86 @@
 * Author: yamachan
 * Descripton ポートフォリオ
 * Version 1.0
+*/
+
+/*Contact Form 7カスタマイズ*/
+/*スマホContact Form 7カスタマイズ*/
+@media(max-width:500px){
+    .inquiry th,.inquiry td {
+    display:block!important;
+    width:100%!important;
+    border-top:none!important;
+    -webkit-box-sizing:border-box!important;
+    -moz-box-sizing:border-box!important;
+    box-sizing:border-box!important;
+    }
+    .inquiry tr:first-child th{
+    border-top:1px solid #d7d7d7!important;
+    }
+    /* 必須・任意のサイズ調整 */	
+    .inquiry .haveto,.inquiry .any {	
+    font-size:10px;
+    }}
+    /*見出し欄*/
+    .inquiry th{
+    text-align:left;
+    font-size:14px;
+    color:#444;
+    padding-right:5px;
+    width:30%;
+    background:#f7f7f7;
+    border:solid 1px #d7d7d7;
+    }
+    /*通常欄*/
+    .inquiry td{
+    font-size:13px;
+    border:solid 1px #d7d7d7;	
+    }
+    /*横の行とテーブル全体*/
+    .entry-content .inquiry tr,.entry-content table{
+    border:solid 1px #d7d7d7;	
+    }
+    /*必須の調整*/
+    .haveto{
+    font-size:7px;
+    padding:5px;
+    background:#ff9393;
+    color:#fff;
+    border-radius:2px;
+    margin-right:5px;
+    position:relative;
+    bottom:1px;
+    }
+    /*任意の調整*/
+    .any{
+    font-size:7px;
+    padding:5px;
+    background:#93c9ff;
+    color:#fff;
+    border-radius:2px;
+    margin-right:5px;
+    position:relative;
+    bottom:1px;
+    }
+    /*ラジオボタンを縦並び指定*/
+    .verticallist .wpcf7-list-item{
+    display:block;
+    }
+    /*送信ボタンのデザイン変更*/
+    #formbtn{
+    display: block;
+    padding:1em 0;
+    margin-top:30px;
+    width:100%;
+    background:#ffaa56;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;	 
+    border-radius:2px;
+    border: none;
+    }
+    /*送信ボタンマウスホバー時*/
+    #formbtn:hover{
+    background:#fff;
+    color:#ffaa56;
+    }

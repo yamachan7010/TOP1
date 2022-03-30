@@ -1,5 +1,14 @@
 "use strict"
-$(function() {
+jQuery(function($) {
+    $(window).on('load', function(){
+        $('.loading').delay(1500).fadeOut(300);
+    });
+    function stopload(){
+        $('.loading').delay(1000).fadeOut(700);
+    }
+    setTimeout('stopload()',10000);
+
+
     $(".el_hamburger").click(function () {
         $(".bl_nav").fadeToggle();
         $(this).toggleClass("is-active");
@@ -49,5 +58,10 @@ $(function() {
         return false;
     });
     
-
+    const modal = $(".bl_successArea");
+    $('form').submit(function() {
+        modal.fadeIn(2000);
+    });
 });
+
+    

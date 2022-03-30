@@ -1,5 +1,9 @@
 <?php wp_body_open(); ?>
 
+<div class="loading">
+    <div class="animation"></div>
+</div>
+
 <header class="ly_header" id="header">
     <div class="ly_header_inner">
         <!-- ここに書いてください -->

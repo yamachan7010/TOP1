@@ -10,3 +10,11 @@ function my_php_Include($params = array()) {
     return ob_get_clean();
 }
     add_shortcode('myphp', 'my_php_Include');
+
+wp_enqueue_script(
+    'main-script',
+    get_template_directory_uri() . '/js/main.js',
+    array('jquery'),
+    false,
+    true
+);
