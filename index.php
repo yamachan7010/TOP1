@@ -65,7 +65,8 @@
                                 <div class="bl_skillLogo">
                                     <i class="fa-brands fa-html5"></i>
                                 </div>
-                                <p class="bl_skillName">HTML5</p>
+                                <p class="bl_skillName">HTML Living Standard</p>
+                                <p class="bl_skillName">(HTML5)</p>
                             </div>
                             <div class="bl_skillContents">
                                 <div class="bl_skillLogo">

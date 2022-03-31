@@ -9,12 +9,18 @@ jQuery(function($) {
     setTimeout('stopload()',10000);
 
 
-    $(".el_hamburger").click(function () {
-        $(".bl_nav").fadeToggle();
-        $(this).toggleClass("is-active");
-        //$(this)はイベントが発生した要素
-        $("body").toggleClass("is-active");
+    $(function () {
+        void 0,
+            $("#hamburger").click(function () {
+                $(this).toggleClass("is-active"),
+                $(".bl_nav").slideToggle(300)
+            }),
+            $(".bl_navLink").click(function () {
+                $("#hamburger").toggleClass("is-active"),
+                $(this).parent().parent().parent().slideToggle(300)
+            })
     });
+
 
     $(window).scroll(function() {
         let value = -$(window).scrollTop() / 40;
@@ -63,5 +69,7 @@ jQuery(function($) {
         modal.fadeIn(2000);
     });
 });
+
+
 
     
