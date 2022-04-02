@@ -50,7 +50,7 @@ Template Name: contact
                                                 <span class="el_any">任意</span><!-- /.el_any -->
                                             </th>
                                             <td>
-                                                <input name="entry.1071714603" type="text" class="el_contact">
+                                                <input name="entry.1071714603" type="text" class="el_contact" >
                                             </td>
                                         </tr>
                                         <tr>
@@ -58,8 +58,8 @@ Template Name: contact
                                                 <span class="el_mandatory">必須</span><!-- /.el_mandatory -->
                                             </th>
                                             <td class="bl_name">
-                                                <input name="entry.1745655164" type="text" class="el_name" placeholder="例）山崎">
-                                                <input name="entry.2146937615" type="text" class="el_name" placeholder="例）太郎">
+                                                <input name="entry.1745655164" type="text" class="el_name" placeholder="例）山崎" required="">
+                                                <input name="entry.2146937615" type="text" class="el_name" placeholder="例）太郎" required=""> 
                                             </td>
                                         </tr>
                                         <tr>
@@ -75,7 +75,7 @@ Template Name: contact
                                                 <span class="el_mandatory">必須</span><!-- /.el_mandatory -->
                                             </th>
                                             <td>
-                                                <input name="entry.1829173330" type="email" name="email" class="el_contact" placeholder="例）○○-○○@mountain.jp">
+                                                <input name="entry.1829173330" type="email" name="email" class="el_contact" placeholder="例）○○-○○@mountain.jp" required="">
                                             </td>
                                         </tr>
                                         <tr>
@@ -111,14 +111,14 @@ Template Name: contact
                                                 <span class="el_mandatory">必須</span><!-- /.el_mandatory -->
                                             </th>
                                             <td>
-                                                <textarea  name="entry.1931379307" id="" cols="30" rows="10" class="bl_textarea" placeholder="例）Webサイトの見積もりをしたい。○○という依頼をしたくて…等"></textarea><!-- /# -->
+                                                <textarea  name="entry.1931379307" id="" cols="30" rows="10" class="bl_textarea" placeholder="例）Webサイトの見積もりをしたい。○○という依頼をしたくて…等" required=""></textarea><!-- /# -->
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table><!-- /.bl_contactForm -->
                             </div><!-- / -->
                             <div class="bl_confirmation">
-                                <input name="entry.2070595246"  type="checkbox" value="送信内容を確認の上チェックしてください。" id="confirmation" >
+                                <input name="entry.2070595246"  type="checkbox" value="送信内容を確認の上チェックしてください。" id="confirmation" required="">
                                 <label for="confirmation">送信内容を確認の上チェックしてください。</label> 
                             </div><!-- /.bl_confirmation -->
                             
@@ -132,6 +132,7 @@ Template Name: contact
                                     送信が完了致しました。
                                     <br>
                                     ご返信には約1日お時間を要する場合がございますので、それまで待っていただけるとありがたいです。
+                                    <br>
                                     本日は、お問い合わせありがとうございました。</p>
                             </div><!-- /.success-wrapper -->
                         </div><!-- /.success-area -->
