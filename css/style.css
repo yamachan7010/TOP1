@@ -948,6 +948,7 @@ page  > top
   margin-bottom: 0;
 }
 .bl_skillContents:hover {
+  box-shadow: 0 4px 10px var(--shadow-black);
   transition: 0.3s;
 }
 
@@ -985,6 +986,16 @@ page  > top
 @media screen and (min-width: 1080px) {
   .bl_skillName {
     font-size: 20px;
+  }
+}
+
+.skillCareer_year {
+  text-align: center;
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  .skillCareer_year {
+    font-size: 12px;
   }
 }
 

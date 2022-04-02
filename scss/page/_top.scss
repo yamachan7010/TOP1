@@ -110,7 +110,7 @@ page  > top
     }
     
     &:hover {
-        // box-shadow: 0 4px 10px var(--shadow-black);
+        box-shadow: 0 4px 10px var(--shadow-black);
         transition: .3s;
     }
 }
@@ -142,6 +142,17 @@ page  > top
     }
     @include g.mq(lg) {
         font-size: 20px;
+    }
+}
+
+.skillCareer_year {
+    text-align: center;
+    font-size: 10px;
+    @include g.mq() {
+        font-size: 12px;
+    }
+    @include g.mq(lg) {
+        font-size: 16px;
     }
 }
 

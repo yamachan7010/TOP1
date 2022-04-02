@@ -36,7 +36,7 @@
                             <p class="el_subTtl">自己紹介</p>
                         </div>
                         <div class="bl_aboutIntroduction">
-                            <div class="bl_aboutImg" style="background: url(<?php echo get_template_directory_uri(); ?>/image/top/yama.png) center center /cover;"></div>
+                            <div class="bl_aboutImg" style="background: url(<?php echo get_template_directory_uri(); ?>/image/top/yama.jpg) center center /cover;"></div>
 
                             <div class="bl_aboutContainer">
                                 <h2 class="bl_about_ttl">my-profile</h2> 
@@ -66,36 +66,42 @@
                                     <i class="fa-brands fa-html5"></i>
                                 </div>
                                 <p class="bl_skillName">HTML5</p>
+                                <p class="skillCareer_year">学習期間　8ヵ月</p><!-- /.bl_skillCareer_date -->
                             </div>
                             <div class="bl_skillContents">
                                 <div class="bl_skillLogo">
                                     <i class="fa-brands fa-css3-alt"></i>
                                 </div>
                                 <p class="bl_skillName">CSS3</p>
+                                <p class="skillCareer_year">学習期間　8ヵ月</p><!-- /.bl_skillCareer_date -->
                             </div>
                             <div class="bl_skillContents">
                                 <div class="bl_skillLogo">
                                     <i class="fa-brands fa-sass"></i>
                                 </div>
                                 <p class="bl_skillName">Sass</p>
+                                <p class="skillCareer_year">学習期間　6ヵ月</p><!-- /.bl_skillCareer_date -->
                             </div>
                             <div class="bl_skillContents">
                                 <div class="bl_skillLogo">
                                     <i class="fa-brands fa-js"></i>
                                 </div>
                                 <p class="bl_skillName">javascript</p>
+                                <p class="skillCareer_year">学習期間　4ヵ月</p><!-- /.bl_skillCareer_date -->
                             </div>
                             <div class="bl_skillContents">
                                 <div class="bl_skillLogoImg">
                                     <img src="<?php echo get_template_directory_uri(); ?>/image/top/jQuery-Logo.png" alt="jQuery" width="3.9" height="1">
                                 </div>
                                 <p class="bl_skillName">jQuery</p>
+                                <p class="skillCareer_year">学習期間　4ヵ月</p><!-- /.bl_skillCareer_date -->
                             </div>
                             <div class="bl_skillContents">
                                 <div class="bl_skillLogo">
                                     <i class="fa-brands fa-wordpress"></i>
                                 </div>
                                 <p class="bl_skillName">WordPress</p>
+                                <p class="skillCareer_year">学習期間　3ヵ月</p><!-- /.bl_skillCareer_date -->
                             </div>
                             
                         </div>

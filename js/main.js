@@ -38,6 +38,10 @@ jQuery(function($) {
         }
     });
 
+    $(".bl_skillContents").click(function() {
+        
+    })
+
 
     const carousel = $("#carousel");
     carousel.slick({
