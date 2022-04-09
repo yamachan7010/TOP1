@@ -93,26 +93,26 @@ page  > top
 
 .bl_skillContents {
     width: 25%;
-    height: 100px;
+    height: 130px;
     margin: 0 10px;
-    margin-bottom: 24px;
+    // padding-bottom: 40px;
     background-color: var(--bg-gray-light);
     // border: 1px solid var(--border-gray-dark);
     
     @include g.mq(sm) {
-        height: 110px;
+        height: 130px;
     }
     @include g.mq() {
-        height: 200px;
+        height: 250px;
     }
     &:nth-child(n + 3) {
         margin-bottom: 0;
     }
     
-    &:hover {
-        box-shadow: 0 4px 10px var(--shadow-black);
-        transition: .3s;
-    }
+    // &:hover {
+    //     box-shadow: 0 4px 10px var(--shadow-black);
+    //     transition: .3s;
+    // }
 }
 
 .bl_skillLogo {

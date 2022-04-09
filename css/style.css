@@ -929,27 +929,22 @@ page  > top
 
 .bl_skillContents {
   width: 25%;
-  height: 100px;
+  height: 130px;
   margin: 0 10px;
-  margin-bottom: 24px;
   background-color: var(--bg-gray-light);
 }
 @media screen and (min-width: 500px) {
   .bl_skillContents {
-    height: 110px;
+    height: 130px;
   }
 }
 @media screen and (min-width: 768px) {
   .bl_skillContents {
-    height: 200px;
+    height: 250px;
   }
 }
 .bl_skillContents:nth-child(n+3) {
   margin-bottom: 0;
-}
-.bl_skillContents:hover {
-  box-shadow: 0 4px 10px var(--shadow-black);
-  transition: 0.3s;
 }
 
 .bl_skillLogo {
@@ -996,6 +991,11 @@ page  > top
 @media screen and (min-width: 768px) {
   .skillCareer_year {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .skillCareer_year {
+    font-size: 16px;
   }
 }
 

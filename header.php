@@ -20,7 +20,6 @@
 <!-- <meta name="robots" content="INDEX,FOLLOW"> -->
 <!-- ファビコン -->
 <!-- css -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css">
 <script src="//kit.fontawesome.com/119cbffb7a.js" crossorigin="anonymous"></script>

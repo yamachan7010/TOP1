@@ -10,10 +10,10 @@ function load_script() {
         // !is_admin() 管理画面ではない時の画面
         // ここでファイルの読み込みを行う
 
-        //reset.cssの読み込み
+        //style.cssの読み込み
         wp_enqueue_style(
-            'reset-css',
-            get_template_directory_uri() . '/css/reset.css',
+            'main-style',
+            get_template_directory_uri() . '/css/style.css',
         );
 
         //main.jsの読み込み
