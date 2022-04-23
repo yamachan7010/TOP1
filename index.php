@@ -55,7 +55,7 @@
                                             <p class="bl_aboutItem">出身: 栃木県</p>
                                             <p class="bl_aboutItem">趣味: 音楽を聞く事・ドライブ・パソコン等の作成</p>
                                             <p class="bl_aboutItem">
-                                                毎日、自分の考えを広げて、多方向から物事を見られるように励んでおります。発注者様が喜んでいただけるよう精一杯やらせていただきます！</p>
+                                                毎日、自分の考えを広げて、多方向から物事を見られるように励んでおります。発注者様に喜んでいただけるよう精一杯やらせていただきます！</p>
                                         </div>
                                     </div>
                                 </div><!-- /.bl_aboutIntroduction -->
@@ -76,42 +76,42 @@
                                             <i class="fa-brands fa-html5"></i>
                                         </div>
                                         <p class="bl_skillName">HTML5</p>
-                                        <p class="skillCareer_year">学習期間　8ヵ月</p><!-- /.bl_skillCareer_date -->
+                                        <p class="skillCareer_year">学習期間　9ヵ月</p><!-- /.bl_skillCareer_date -->
                                     </div>
                                     <div class="bl_skillContents">
                                         <div class="bl_skillLogo">
                                             <i class="fa-brands fa-css3-alt"></i>
                                         </div>
                                         <p class="bl_skillName">CSS3</p>
-                                        <p class="skillCareer_year">学習期間　8ヵ月</p><!-- /.bl_skillCareer_date -->
+                                        <p class="skillCareer_year">学習期間　9ヵ月</p><!-- /.bl_skillCareer_date -->
                                     </div>
                                     <div class="bl_skillContents">
                                         <div class="bl_skillLogo">
                                             <i class="fa-brands fa-sass"></i>
                                         </div>
                                         <p class="bl_skillName">Sass</p>
-                                        <p class="skillCareer_year">学習期間　6ヵ月</p><!-- /.bl_skillCareer_date -->
+                                        <p class="skillCareer_year">学習期間　7ヵ月</p><!-- /.bl_skillCareer_date -->
                                     </div>
                                     <div class="bl_skillContents">
                                         <div class="bl_skillLogo">
                                             <i class="fa-brands fa-js"></i>
                                         </div>
                                         <p class="bl_skillName">javascript</p>
-                                        <p class="skillCareer_year">学習期間　4ヵ月</p><!-- /.bl_skillCareer_date -->
+                                        <p class="skillCareer_year">学習期間　5ヵ月</p><!-- /.bl_skillCareer_date -->
                                     </div>
                                     <div class="bl_skillContents">
                                         <div class="bl_skillLogoImg">
                                             <img src="<?php echo get_template_directory_uri(); ?>/image/top/jQuery-Logo.png" alt="jQuery" width="3.9" height="1">
                                         </div>
                                         <p class="bl_skillName">jQuery</p>
-                                        <p class="skillCareer_year">学習期間　4ヵ月</p><!-- /.bl_skillCareer_date -->
+                                        <p class="skillCareer_year">学習期間　5ヵ月</p><!-- /.bl_skillCareer_date -->
                                     </div>
                                     <div class="bl_skillContents">
                                         <div class="bl_skillLogo">
                                             <i class="fa-brands fa-wordpress"></i>
                                         </div>
                                         <p class="bl_skillName">WordPress</p>
-                                        <p class="skillCareer_year">学習期間　3ヵ月</p><!-- /.bl_skillCareer_date -->
+                                        <p class="skillCareer_year">学習期間　4ヵ月</p><!-- /.bl_skillCareer_date -->
                                     </div>
 
                                 </div>
