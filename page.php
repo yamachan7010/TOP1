@@ -39,7 +39,7 @@ Template Name: contact
 
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="onLoad()">
                     </iframe>
-                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtba5R0UHeo9_UDRrMA5hwH499l8Axu_zcgVqRF_Q58hexKw/formResponse" 
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtba5R0UHeo9_UDRrMA5hwH499l8Axu_zcgVqRF_Q58hexKw/formResponse" 
                             method="POST" target="hidden_iframe" onsubmit="submitted=true">
 
                             <div class="bl_contactForm">
