@@ -671,7 +671,7 @@ utility > u-hidden
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 5px;
+  top: 0px;
   right: 0px;
   cursor: pointer;
   z-index: 999;
@@ -695,6 +695,15 @@ utility > u-hidden
   top: 35px;
 }
 
+.el_hamburger_label {
+  position: absolute;
+  top: 40px;
+  left: 9px;
+  color: var(--border-contact-gray);
+  font-size: 10px;
+  transition: 0.3s;
+}
+
 .el_hamburger:hover .el_hamburgerBar:nth-child(2) {
   left: 10px;
 }
@@ -710,6 +719,9 @@ utility > u-hidden
 .el_hamburger.is-active .el_hamburgerBar:nth-child(3) {
   top: 20px;
   transform: rotate(-45deg);
+}
+.el_hamburger.is-active .el_hamburger_label {
+  display: none;
 }
 
 body.is-active {
@@ -955,12 +967,13 @@ page  > top
 }
 .bl_skillLogoImg {
   max-height: 20px;
-  margin: 23px 5px;
+  margin: 30px 0px;
 }
 @media screen and (min-width: 768px) {
   .bl_skillLogoImg {
     max-width: 200px;
-    margin: 65px auto;
+    margin: 80px auto;
+    margin-bottom: 70px;
   }
 }
 

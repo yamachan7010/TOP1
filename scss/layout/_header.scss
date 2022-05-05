@@ -142,7 +142,7 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    top:  5px;
+    top:  0px;
     right: 0px;
     cursor: pointer;
     z-index: 999;
@@ -168,6 +168,17 @@
     }
 }
 
+.el_hamburger_label {
+    position: absolute;
+    top: 40px;
+    left: 9px;
+    color: var(--border-contact-gray);
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+
+
 .el_hamburger:hover .el_hamburgerBar:nth-child(2) {
     left: 10px;
 }
@@ -184,6 +195,9 @@
     .el_hamburgerBar:nth-child(3) {
         top: 20px;
         transform: rotate(-45deg);
+    }
+    .el_hamburger_label {
+        display: none;
     }
 }
 

@@ -125,10 +125,11 @@ page  > top
     }
     &Img {
         max-height: 20px;
-        margin: 23px 5px;
+        margin: 30px 0px;
         @include g.mq() {
             max-width: 200px;
-            margin: 65px auto;
+            margin: 80px auto;
+            margin-bottom: 70px;
         }
     }
     

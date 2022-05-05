@@ -15,6 +15,7 @@
                 <span class="el_hamburgerBar"></span>
                 <span class="el_hamburgerBar"></span>
                 <span class="el_hamburgerBar"></span>
+                <span class="el_hamburger_label">MENU</span>
             </div>
 
             <nav class="bl_nav">
