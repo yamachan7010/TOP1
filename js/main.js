@@ -17,9 +17,12 @@ jQuery(function ($) {
         $("body").toggleClass("is-active");
     });
 
-    $('.bl_nav a[href]').on('click', function(event) {
-        $('#js-hamburger').trigger('click');
-    });
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        //スマホ処理
+        $('.bl_nav a[href]').on('click', function (event) {
+            $('#js-hamburger').trigger('click');
+        });
+    }
 
 
     $(window).scroll(function () {
